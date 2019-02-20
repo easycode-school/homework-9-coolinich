@@ -1,0 +1,20 @@
+<h3>Sort users</h3>
+<h4>Initial array to be sorted</h4>
+<ul>
+  <li *ngFor="let user of usersList">
+    {{ user.name }}
+    {{ user.age }}
+    {{ user.hobby }}
+    {{ user.hasPet }}
+  </li>
+</ul>
+
+<h4>Sorted array (by hobby, reversed)</h4>
+<ul>
+  <li *ngFor="let user of (userListCopy | sortArray: 'hobby': 'desc')">
+    {{ user.name }}
+    {{ user.age }}
+    {{ user.hobby }}
+    {{ user.hasPet }}
+  </li>
+</ul>

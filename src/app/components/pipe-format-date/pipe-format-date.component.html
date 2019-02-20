@@ -1,0 +1,38 @@
+<h3>Format dates</h3>
+<table>
+  <tr>
+    <th>Date description</th>
+    <th>Row date</th>
+    <th>Formated date</th>
+  </tr>
+  <tr>
+    <td>Today</td>
+    <td>{{ dateNow }}</td>
+    <td>{{ dateNow | formatDate }}</td>
+  </tr>
+  <tr>
+    <td>Earlier today (minute before)</td>
+    <td>{{ dateMinuteBefore }}</td>
+    <td>{{ dateMinuteBefore | formatDate }}</td>
+  </tr>
+  <tr>
+    <td>Earlier today (less than hour)</td>
+    <td>{{ dateHourBefore }}</td>
+    <td>{{ dateHourBefore | formatDate }}</td>
+  </tr>
+  <tr>
+    <td>Earlier today (less than 24 hours)</td>
+    <td>{{ dateToday }}</td>
+    <td>{{ dateToday | formatDate }}</td>
+  </tr>
+  <tr>
+    <td>Yesterday</td>
+    <td>{{ dateYesterday }}</td>
+    <td>{{ dateYesterday | formatDate }}</td>
+  </tr>
+  <tr>
+    <td>2 days ago</td>
+    <td>{{ date2daysAgo }}</td>
+    <td>{{ date2daysAgo | formatDate }}</td>
+  </tr>
+</table>
